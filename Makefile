@@ -12,7 +12,7 @@ boost_1_45_0: boost_1_45_0.tar.gz
 apply-patch: boost_1_45_0 boost_1_45_0.patch
 	patch -u -p1 -d boost_1_45_0 < boost_1_45_0.patch
 
-install: boost_1_45_0
+install:
 	cd boost_1_45_0 && \
 		./bootstrap.sh && \
 		./bjam && ./bjam install
